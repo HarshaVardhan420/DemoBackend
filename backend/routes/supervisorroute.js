@@ -16,6 +16,6 @@ router.delete('/workers/:workerId', supervisorcontroller.deleteWorker);
 router.post('/upload', upload.single('file'), supervisorcontroller.uploadWorkers);
 
 router.post('/forgot', supervisorcontroller.forgotPassword);
- 
+router.post('/reset/:id', supervisorcontroller.resetPassword);
 
 module.exports = router;
