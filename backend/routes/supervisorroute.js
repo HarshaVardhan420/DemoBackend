@@ -19,3 +19,4 @@ router.post('/forgot', supervisorcontroller.forgotPassword);
 router.post('/reset-password', supervisorcontroller.resetPassword);
 
 module.exports = router;
+
